@@ -5,6 +5,27 @@
 	<title>Document</title>
 </head>
 <body>
+	<div id="">
+		1、谁最终调用函数，this指向谁。<br/>
+		 	
+		 	&nbsp;&nbsp;&nbsp;&nbsp;a.this指向的，永远只可能是对象！！！！！<br/>
+		 	
+		 	&nbsp;&nbsp;&nbsp;&nbsp;b.this指向谁，永远不取决于this写在哪，而是取决于this在哪调用；<br/>
+		 	
+		 	&nbsp;&nbsp;&nbsp;&nbsp;c.this指向的对象，我们称之为函数的上下文context，也叫函数的调用者<br/>
+		 	
+		 2、*****this指向的规律
+		 
+		 	&nbsp;&nbsp;&nbsp;&nbsp;a.通过函数名直接调用的：this指向window<br/>
+		 	
+		 	&nbsp;&nbsp;&nbsp;&nbsp;b.通过对象.函数名调用的：this指向这个对象；<br/>
+		 	
+		 	&nbsp;&nbsp;&nbsp;&nbsp;c.函数作为数组的一个元素，通过数组下标调用的：this指向这个数组<br/>
+		 	
+		 	&nbsp;&nbsp;&nbsp;&nbsp;d.函数作为window内置函数的回调函数调用时：this指向window<br/>
+		 	
+		 	&nbsp;&nbsp;&nbsp;&nbsp;e.函数作为构造函数，用new关键字调用时：this指向的是new出的新对象<br/>
+	</div>
 	<script type="text/javascript">
 		/*
 		 1、谁最终调用函数，this指向谁。
