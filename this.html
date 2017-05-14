@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		 1、谁最终调用函数，this指向谁。
+		 	
+		 	a.this指向的，永远只可能是对象！！！！！
+		 	
+		 	b.this指向谁，永远不取决于this写在哪，而是取决于this在哪调用；
+		 	
+		 	c.this指向的对象，我们称之为函数的上下文context，也叫函数的调用者
+		 	
+		 2、*****this指向的规律
+		 
+		 	a.通过函数名直接调用的：this指向window
+		 	
+		 	b.通过对象.函数名调用的：this指向这个对象；
+		 	
+		 	c.函数作为数组的一个元素，通过数组下标调用的：this指向这个数组
+		 	
+		 	d.函数作为window内置函数的回调函数调用时：this指向window
+		 	
+		 	e.函数作为构造函数，用new关键字调用时：this指向的是new出的新对象
+		 * 
+		 * */
+	</script>
+</body>
+</html>
